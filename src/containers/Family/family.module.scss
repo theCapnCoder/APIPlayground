@@ -1,0 +1,30 @@
+.family {
+  .familyCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .buttons {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: start;
+    grid-auto-flow: column;
+
+    .button {
+      padding: 8px 15px;
+      border-radius: 5px;
+      background: lightblue;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .families {
+    padding: 20px 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}

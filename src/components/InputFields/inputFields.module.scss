@@ -1,0 +1,11 @@
+.inputFields {
+  padding: 3vw;
+  display: grid;
+  justify-items: start;
+
+  .input__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, auto));
+    grid-auto-flow: column;
+  }
+}

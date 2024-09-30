@@ -1,0 +1,34 @@
+.categoryList {
+
+  .title{
+    padding: 20px 0;
+    font-size: 50px;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-auto-flow: column;
+    grid-gap: 4vw;
+    align-items: center;
+
+    &::after, 
+    &::before {
+      content: '';
+      border: 1px solid #000;
+    }
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 10px;
+
+    button {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 5px;
+      background: lemonchiffon;
+      color: purple;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.links {
+  display: block;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+
+  .router__link {
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    font-size: 24px;
+
+    &:hover {
+      background-color: lightblue;
+      color: blue;
+    }
+  }
+
+  li {
+    list-style: none;
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
